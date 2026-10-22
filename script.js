@@ -34,8 +34,8 @@
           alt: 'Illustrated rainy-night phone call scenes from the beginning of our story',
           caption: 'the rain, the call, the beginning ♡',
           kicker: 'Memory 01 · the first chapters',
-          title: 'Where our <span class="accent">journey</span> started...',
-          description: 'Every lovely story has a first page. Ours is still my favourite place to begin.'
+          title: 'Endrum<span class="accent">Aval</span>',
+          description: 'மழை நீருக்குள் நீயும், பருவக்காற்றாக வரும் உனது பேச்சும், என்னை உன்னை உணரச் செய்தது... அது காதலா, இல்லை காதலால் வரும் ஏக்கமா?'
         },
         {
           image: 'Doodles/img%202.png',
@@ -91,7 +91,7 @@
         memoryImage.src = memory.image;
         memoryImage.alt = memory.alt;
         memoryCaption.textContent = memory.caption;
-        memoryKicker.textContent = memory.kicker;
+        if (memoryKicker) memoryKicker.textContent = memory.kicker;
         memoryTitle.innerHTML = memory.title;
         memoryDescription.textContent = memory.description;
         memoryDots.forEach((dot, i) => {
