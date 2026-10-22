@@ -42,32 +42,32 @@
           alt: 'Hand-drawn scenes of us meeting, talking, laughing, and sharing little moments',
           caption: 'our very own little scrapbook',
           kicker: 'Memory 02 · our kind of magic',
-          title: 'All the endless <span class="accent">talks</span> & silly laughs...',
-          description: 'The little conversations, the big ones, and all the laughter in between — I could stay there forever.'
+          title: 'Endrum<span class="accent">Aval</span>',
+          description: 'நாம் இருவரும் வெகுதூரம் சென்றாலும், நீயும் நானும் ஒன்றுதான்... உடல்கள் மட்டுமே தூரம் சென்றன, இதயங்கள் இல்லை!'
         },
         {
           image: 'Doodles/img%203.png',
           alt: 'Illustrated late-night messages and shy, sweet reactions',
           caption: 'even our random chats ♡',
           kicker: 'Memory 03 · the little things',
-          title: 'Every moment that made me fall <span class="accent">deeper</span> in love...',
-          description: 'Somehow, every ordinary day with you becomes one I want to keep.'
+          title: 'Endrum<span class="accent">Aval</span>',
+          description: 'விழிவழியைக் காத்திருந்தேன் உன்னை காண... நானோ என் கண்ணால் கண்டேன், நீயோ உன் இதயத்தால் கண்டாய்! மறந்து பறந்து உன்னிடம் வந்ததோ... என் இதயம்?'
         },
         {
           image: 'Doodles/img%204.png',
           alt: 'Illustrated rainy journey as we make our way to find each other',
           caption: 'every road led me to you ♡',
           kicker: 'Memory 04 · through every storm',
-          title: "I'd find my way to you <span class=\"accent\">every time</span>...",
-          description: 'No matter how long the road or how hard the rain, being with you is always worth it.'
+          title: 'Endrum<span class="accent">Aval</span>',
+          description: 'அறியாமல் பெய்த மழை போல, என் மனதிற்குள் நுழைந்தாய்... நட்பு என்று நினைத்திருந்தேன், இன்றுதான் புரிந்தது— என் சுவாசம் முழுவதும் நனைந்திருப்பது உன் காதலால் மட்டுமே என்று!'
         },
         {
           image: 'Doodles/img%205.png',
           alt: 'A scrapbook of our moments together, including holding hands and a warm hug',
           caption: 'and every little moment after ♡',
           kicker: 'Memory 05 · my favourite collection',
-          title: 'A thousand little reasons to choose <span class="accent">you</span>...',
-          description: 'Every memory brought me here — and I cannot wait for all the pages still to come.'
+          title: 'Endrum<span class="accent">Aval</span>',
+          description: 'உன் அருகே வந்து, உன் கண்களைப் பார்த்து, உன் கைகளைக் கோர்த்து... சொல்ல நினைக்கும் அந்த வார்த்தை... புரியுதா?'
         }
       ];
 
