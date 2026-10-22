@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0d0814">
+  <title>A little story for you ✨</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="heart-field" id="heart-field" aria-hidden="true"></div>
+  <audio id="ambient-audio" loop preload="none" aria-label="Optional background music"></audio>
+
+  <!-- Customize the displayed story text in this HTML file. Memory captions and descriptions are in script.js. -->
+  <main class="story-shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">✦</span><span>A little storybook</span></div>
+      <button class="sound-button" id="sound-toggle" type="button" aria-label="Sound is off. No audio track has been added." aria-pressed="false" title="Optional music can be added to the audio element">
+        <svg id="sound-icon" width="21" height="21" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M11 5 6 9H3v6h3l5 4V5Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+          <path d="m17 9 4 6m0-6-4 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </header>
+
+    <div class="progress-wrap" aria-label="Story progress">
+      <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+      <span class="page-count" id="page-count">01 / 05</span>
+    </div>
+
+    <div class="book" id="book">
+      <section class="slide active" data-slide="0" aria-labelledby="intro-title">
+        <div class="glass-card intro-card">
+          <p class="eyebrow">Oru Kutty Story</p>
+          <h1 class="headline" id="intro-title">Hi <span class="accent">Rithiii...</span> ✨</h1>
+          <p class="intro-copy">I have something special for you. Wanna see it?</p>
+          <button class="primary-button" type="button" data-next>Yess! <span aria-hidden="true">💕</span></button>
+        </div>
+      </section>
+
+      <section class="slide" data-slide="1" aria-labelledby="ready-title" aria-hidden="true">
+        <div class="glass-card intro-card">
+          <p class="eyebrow">Yosichu Mudivu edu </p>
+          <h2 class="headline" id="ready-title">Najamavaa??... <span class="accent">you sure?</span></h2>
+          <p class="intro-copy">Take a deep breath and tap below to start turning the pages...</p>
+          <button class="primary-button" type="button" data-next>I'm Ready! <span aria-hidden="true"></span></button>
+        </div>
+      </section>
+
+      <section class="slide" data-slide="2" aria-labelledby="memory-title" aria-hidden="true">
+        <div class="glass-card memory-layout" id="memory-swipe-area">
+          <div class="memory-visual">
+            <div class="photo-frame">
+              <span class="tape" aria-hidden="true"></span>
+              <img id="memory-image" src="Doodles/img%203.png" alt="Illustrated scenes from the first moments of our story">
+              <p class="hand-caption" id="memory-caption">our little beginning ♡</p>
+            </div>
+          </div>
+          <div class="memory-copy">
+            <h2 class="headline" id="memory-title">Endrum<span class="accent">Aval</span></h2>
+            <p class="intro-copy" id="memory-description">மழை நீருக்குள் நீயும், பருவக்காற்றாக வரும் உனது பேச்சும், என்னை உன்னை உணரச் செய்தது... அது காதலா, இல்லை காதலால் வரும் ஏக்கமா?</p>
+            <div class="memory-controls">
+              <button class="primary-button" id="next-memory" type="button">Next <span aria-hidden="true">➡️</span></button>
+              <div class="memory-dots" role="group" aria-label="Choose a memory">
+                <button class="memory-dot active" type="button" aria-label="Memory 1" aria-current="true"></button>
+                <button class="memory-dot" type="button" aria-label="Memory 2"></button>
+                <button class="memory-dot" type="button" aria-label="Memory 3"></button>
+                <button class="memory-dot" type="button" aria-label="Memory 4"></button>
+                <button class="memory-dot" type="button" aria-label="Memory 5"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" data-slide="3" aria-labelledby="bridge-title" aria-hidden="true">
+        <div class="glass-card intro-card bridge-card">
+          <div class="bridge-heart" aria-hidden="true">♡</div>
+          <p class="eyebrow">Almost at the last page</p>
+          <h2 class="headline" id="bridge-title">There's just one <span class="accent">final page</span> left...</h2>
+          <p class="intro-copy">Paaka ready ah irukiya??</p>
+          <button class="primary-button" type="button" data-next>Show me the final slide <span aria-hidden="true">✨</span></button>
+        </div>
+      </section>
+
+      <section class="slide" data-slide="4" aria-labelledby="proposal-title" aria-hidden="true">
+        <div class="glass-card proposal-layout" id="proposal-card">
+          <div class="photo-frame proposal-art">
+            <span class="tape" aria-hidden="true"></span>
+            <img src="Doodles/img%205.png" alt="A hand-drawn collage of sweet shared moments, including holding hands and a hug">
+            <p class="hand-caption">and every page after this ♡</p>
+          </div>
+          <div class="proposal-copy">
+            <p class="eyebrow">My favourite person, my favourite story</p>
+            <h2 class="headline" id="proposal-title">Really??<span class="accent">Turn!!</span></h2>
+            <p class="intro-copy">I choose you, in every story and every tomorrow.</p>
+            <div class="answer-stage" id="answer-stage">
+              <button class="primary-button yes-button" id="yes-button" type="button">YES, ABSOLUTELY! <span aria-hidden="true">💖</span></button>
+              <button class="secondary-button no-button" id="no-button" type="button">No</button>
+            </div>
+            <p class="answer-message" id="answer-message" role="status" aria-live="polite">From nowww I can call you Thangamee, Chellamee, vairamee!!!!! I love youu Di chellakuttyyyyy!!!! 🥹❤️</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer-note"><span aria-hidden="true">♡</span></footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
